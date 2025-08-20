@@ -1,0 +1,55 @@
+{
+  "general": {
+    "enabled": true,
+
+    "enableChannel": true,
+    "enableCreatorDM": true,
+    "enableParticipantDM": true,
+    "enableActiveAdminDM": true,
+    "enableEveryAdminDM": true,
+
+    "channel": "1373142267145224274",
+    "mode": "html"
+  },
+  "embedSettings": {
+    "customColor": "",
+    "listAllParticipants": true,
+    "includeTicketStats": true
+  },
+  "textTranscriptStyle": {
+    "layout": "detailed",
+    "includeStats": true,
+    "includeIds": true,
+    "includeEmbeds": true,
+    "includeFiles": true,
+    "includeBotMessages": true,
+
+    "fileMode": "channel-name",
+    "customFileName": ""
+  },
+  "htmlTranscriptStyle": {
+    "background": {
+      "enableCustomBackground": false,
+      "backgroundColor": "",
+      "backgroundImage": ""
+    },
+    "header": {
+      "enableCustomHeader": false,
+      "backgroundColor": "#202225",
+      "decoColor": "#f8ba00",
+      "textColor": "#ffffff"
+    },
+    "stats": {
+      "enableCustomStats": false,
+      "backgroundColor": "#202225",
+      "keyTextColor": "#737373",
+      "valueTextColor": "#ffffff",
+      "hideBackgroundColor": "#40444a",
+      "hideTextColor": "#ffffff"
+    },
+    "favicon": {
+      "enableCustomFavicon": false,
+      "imageUrl": "https://r2.e-z.host/323122df-3ab0-49aa-8f64-726054b4d560/wdveeizn.png"
+    }
+  }
+}

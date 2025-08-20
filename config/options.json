@@ -1,0 +1,170 @@
+[
+  {
+    "id": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩-ticket",
+    "name": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩",
+    "description": "Create this ticket if you want 𝙎𝙪𝙥𝙥𝙤𝙧𝙩! / Mở ticket này nếu bạn muốn 𝙎𝙪𝙥𝙥𝙤𝙧𝙩!",
+    "type": "ticket",
+
+    "button": {
+      "emoji": "💔",
+      "label": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩",
+      "color": "green"
+    },
+
+    "ticketAdmins": ["1406632246873428180"],
+    "readonlyAdmins": [],
+    "allowCreationByBlacklistedUsers": false,
+    "questions": [],
+
+    "channel": {
+      "prefix": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩-",
+      "suffix": "user-name",
+      "category": "1406914823450525766",
+      "closedCategory": "1406914823450525766",
+      "backupCategory": "1406914823450525766",
+      "claimedCategory": [],
+      "description": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩"
+    },
+
+    "dmMessage": {
+      "enabled": false,
+      "text": "T",
+      "embed": {
+        "enabled": false,
+        "title": "",
+        "description": "",
+        "customColor": "",
+
+        "image": "",
+        "thumbnail": "",
+        "fields": [],
+        "timestamp": false
+      }
+    },
+    "ticketMessage": {
+      "enabled": true,
+      "text": "",
+      "embed": {
+        "enabled": true,
+        "title": "𝙎𝙪𝙥𝙥𝙤𝙧𝙩",
+        "description": " Vui lòng đợi cho đến khi có người hỗ trợ bạn!",
+        "customColor": "",
+
+        "image": "https://r2.e-z.host/323122df-3ab0-49aa-8f64-726054b4d560/wdveeizn.png",
+        "thumbnail": "https://r2.e-z.host/323122df-3ab0-49aa-8f64-726054b4d560/sriqwvtk.png",
+        "fields": [],
+        "timestamp": true
+      },
+      "ping": {
+        "@here": false,
+        "@everyone": false,
+        "custom": ["1406547200435163197"]
+      }
+    },
+    "autoclose": {
+      "enableInactiveHours": true,
+      "inactiveHours": 24,
+      "enableUserLeave": true,
+      "disableOnClaim": true
+    },
+    "autodelete": {
+      "enableInactiveDays": true,
+      "inactiveDays": 3,
+      "enableUserLeave": true,
+      "disableOnClaim": true
+    },
+    "cooldown": {
+      "enabled": false,
+      "cooldownMinutes": 10
+    },
+    "limits": {
+      "enabled": false,
+      "globalMaximum": 20,
+      "userMaximum": 3
+    }
+  },
+  {
+    "id": "Partner",
+    "name": "Partner",
+    "description": "Create this ticket if you want Partner! / Mở ticket này nếu bạn muốn Partner!",
+    "type": "ticket",
+
+    "button": {
+      "emoji": "🤝",
+      "label": "Partner",
+      "color": "green"
+    },
+
+    "ticketAdmins": ["1406914823450525766"],
+    "readonlyAdmins": [],
+    "allowCreationByBlacklistedUsers": false,
+    "questions": [],
+
+    "channel": {
+      "prefix": "help-",
+      "suffix": "user-name",
+      "category": "1406914823450525766",
+      "closedCategory": "1406914823450525766",
+      "backupCategory": "1406914823450525766",
+      "claimedCategory": [],
+      "description": "Partner"
+    },
+
+    "dmMessage": {
+      "enabled": false,
+      "text": "",
+      "embed": {
+        "enabled": false,
+        "title": "",
+        "description": "",
+        "customColor": "",
+
+        "image": "",
+        "thumbnail": "",
+        "fields": [],
+        "timestamp": false
+      }
+    },
+    "ticketMessage": {
+      "enabled": true,
+      "text": "",
+      "embed": {
+        "enabled": true,
+        "title": "Help Ticket / Ticket Hỗ Trợ",
+        "description":  Vui lòng đợi cho đến khi có người hỗ trợ bạn!",
+        "customColor": "",
+
+        "image": "https://r2.e-z.host/323122df-3ab0-49aa-8f64-726054b4d560/wdveeizn.png",
+        "thumbnail": "https://r2.e-z.host/323122df-3ab0-49aa-8f64-726054b4d560/sriqwvtk.png",
+        "fields": [],
+        "timestamp": true
+      },
+      "ping": {
+        "@here": true,
+        "@everyone": false,
+        "custom": ["1365304275420450867"]
+      }
+    },
+    "autoclose": {
+      "enableInactiveHours": true,
+      "inactiveHours": 24,
+      "enableUserLeave": true,
+      "disableOnClaim": true
+    },
+    "autodelete": {
+      "enableInactiveDays": true,
+      "inactiveDays": 3,
+      "enableUserLeave": true,
+      "disableOnClaim": true
+    },
+    "cooldown": {
+      "enabled": false,
+      "cooldownMinutes": 10
+    },
+    "limits": {
+      "enabled": false,
+      "globalMaximum": 20,
+      "userMaximum": 3
+    }
+  }
+]
