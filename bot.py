@@ -35,9 +35,9 @@ async def on_message(message: discord.Message):
             description="Chỉ cần gửi bill, không cần ghi nội dung!",
             color=discord.Color.red()
         )
-        embed.add_field(name="🏦 Ngân hàng", value="MB Bank", inline=True)
-        embed.add_field(name="🔢 Số tài khoản", value="7718052009", inline=True)
-        embed.add_field(name="👤 Chủ TK", value="Nguyễn Trung Kiên", inline=True)
+        embed.add_field(name="<:dcgo_bank:1411585121890336828> Ngân hàng", value="MB Bank", inline=True)
+        embed.add_field(name="🔢 Số tài khoản", value="0378519908", inline=True)
+        embed.add_field(name="👤 Chủ TK", value="nguyen van hung", inline=True)
         embed.set_image(url=QR_LINK)
         await message.channel.send(embed=embed)
 
