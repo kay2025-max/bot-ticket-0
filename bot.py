@@ -7,6 +7,31 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+intents = discord.Intents.default()
+intents.message_content = True  # cần để đọc nội dung tin nhắn
+
+
+
+CHANNEL_ID = 1411219981173129216  # kênh mà bot lắng nghe
+EMOJI_1 = "<a:2pinkChuyp:1411578843340345435>"
+EMOJI_2 = "<a:hlg_yeye:1411579466290823188>"
+
+
+
+@bot.event
+async def on_message(message: discord.Message):
+    if message.author.bot:
+        return
+
+    if message.channel.id == CHANNEL_ID and "+1 legit" in message.content.lower():
+        try:
+            await message.add_reaction(EMOJI_1)
+            await message.add_reaction(EMOJI_2)
+        except Exception as e:
+            print(f"❌ Không thể react: {e}")
+
+    await bot.process_commands(message)
+    
 # Lệnh gửi bảng giá
 @bot.command(name="store")
 async def store(ctx):
