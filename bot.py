@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 GUILD_ID = 1409783871947407482 # ID server của bạn
-
+QR_LINK = "https://media.discordapp.net/attachments/1407171235078602855/1411582406606979142/IMG_20250816_235413.jpg"
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -233,6 +233,29 @@ async def update_gia(ctx):
 async def update_gia_error(ctx, error):
     if isinstance(error, commands.MissingPermissions):
         await ctx.send("❌ **Chỉ admin mới có thể sử dụng lệnh này!**")
+
+
+@bot.event
+async def on_message(message: discord.Message):
+    if message.author.bot:
+        return
+
+    # Nếu tin nhắn có chứa chữ "bill" thì gửi QR code
+    if "bill" in message.content.lower():
+        embed = discord.Embed(
+            title="💳 Thông Tin Thanh Toán",
+            description="Chỉ cần gửi bill, không cần ghi nội dung!",
+            color=discord.Color.red()
+        )
+        embed.add_field(name="🏦 Ngân hàng", value="MB Bank", inline=True)
+        embed.add_field(name="🔢 Số tài khoản", value="7718052009", inline=True)
+        embed.add_field(name="👤 Chủ TK", value="Nguyễn Trung Kiên", inline=True)
+        embed.set_image(url=QR_LINK)
+
+        await message.channel.send(embed=embed)
+
+    await bot.process_commands(message)
+
 
 # Khi bot online
 @bot.event
